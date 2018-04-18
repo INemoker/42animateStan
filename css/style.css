@@ -1,0 +1,283 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #bbebf5 0%,#ffffff 76%,#ffffff 76%);
+}
+
+#code{
+    position: fixed;     
+    padding: 16px;
+    height: 100vh;
+    width:100vw; 
+    overflow: auto;
+}
+
+
+.stan .head{
+    width: 180px;
+    height: 180px;
+    position:fixed;
+    bottom: 90px;
+    border-radius: 50%;
+    background-color: #FEDDB2;
+    display: flex;
+}
+.stan .head .lefteye{
+
+    width: 48px;
+    height:60px;
+    position:absolute;
+    bottom: 45px;
+    left: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform:rotate(30deg);
+}
+.stan .head .righteye{
+
+    width: 48px;
+    height:60px;
+    position:absolute;
+    bottom: 45px;
+    right: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform:rotate(-30deg);
+}
+.stan .head .lefteye::before{
+    height: 6px;
+    width: 5px;
+    background: #000;
+    right: 10px;
+    top: 22px;
+    border-radius: 50%;
+}
+.stan .head .righteye::before{
+    height: 6px;
+    width: 5px;
+    background: #000;
+    left: 10px;
+    top: 22px;
+    border-radius: 50%;
+}
+.stan .head .mouth{
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: 25px;
+    height: 15px;
+    width: 30px;
+    border: 1px solid transparent;
+    border-top: 1px solid #333333;
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+.stan .head::before{
+    top: 0;
+    border-top: 70px solid #5162AA;
+    height: 150px;
+    width: 100%;
+    border-radius: inherit;
+}
+.stan .hat{
+    box-shadow: 0 -20px 0 -1px #E33940;
+    position: absolute;
+    bottom: -25px;
+    width: 180px;
+    height: 225px;
+    border-radius: 50% 50% 0 0 / 10% 10% 0 0;
+}
+.stan .bobble {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    bottom: 247px;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.stan .bobble >span{
+    position:absolute;
+    background: #E33940;
+    height: 6px;
+    width: 42px;
+    border-radius: 10%;
+}
+.stan .bobble >span.rect1{
+    transform:rotate(25deg);
+}
+.stan .bobble >span.rect2{
+    transform:rotate(51deg);
+}
+.stan .bobble >span.rect3{
+    transform:rotate(77deg);
+}
+.stan .bobble >span.rect4{
+    transform:rotate(102deg);
+}
+.stan .bobble >span.rect5{
+    transform:rotate(128deg);
+}
+.stan .bobble >span.rect6{
+    transform:rotate(154deg);
+}
+.stan .bobble >span.rect7{
+    transform:rotate(180deg);
+}
+.stan .body{
+    position: absolute;
+    width: 114px;
+    left:18%;
+    top:53px;
+}
+.stan .body .inner {
+    position: absolute;
+    width: 130px;
+    border-bottom: 104px solid #BB6F4F;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-radius: 10% 21% 50% 50% / 0 0 5% 5%;
+    left: 50%;
+    transform: translate(-50%,-8px);
+    z-index: -1;
+}
+.stan .body .inner::before {
+    left: 50%;
+    height: 90px;
+    width: 12px;
+    border-left: 3px solid #333333;
+    transform:translateY(12px);
+}
+.stan .body .leftarm {
+    position: absolute;
+    background: #BB6F4F;
+    width: 23px;
+    height: 60px;
+    transform: skew(-17deg);
+    border-radius: 0 0 30% 50% / 0 0 10% 20%;
+    top: 15px;
+    left: -10px;
+    z-index: -1;
+}
+.stan .body .leftarm:before {
+    height: 20px;
+    width: 10px;
+    border-right: 2px solid #333333;
+    right: -1px;
+    bottom: 10px;
+}
+.stan .body .leftarm .hand{
+    position: absolute;
+    height: 33px;
+    width: 27px;
+    background: #E33940;
+    left: -1px;
+    transform: rotateX(-30deg) skewX(14deg);
+    border-radius: 50% 50% 40% 60% / 50% 20% 20% 50%;
+    bottom: -12px;
+}
+.stan .body .rightarm {
+    position: absolute;
+    width: 23px;
+    height: 60px;
+    background: #BB6F4F;
+    transform: skew(17deg);
+    border-radius: 0 0 50% 30% / 0 0 20% 10%;
+    right: -12px;
+    top: 15px;
+    z-index: -1;
+}
+.stan .body .rightarm:before {
+    height: 19px;
+    width: 10px;
+    border-right: 2px solid #333333;
+    right: 21px;
+    bottom: 13px;
+}
+.stan .body .rightarm .hand {
+    position: absolute;
+    height: 33px;
+    width: 27px;
+    background: #E33940;
+    transform: rotateX(-30deg) skewX(-14deg);
+    border-radius: 50% 50% 60% 40% / 20% 50% 50% 20%;
+    right: -1px;
+    bottom: -11px;
+}
+.stan .body .scarf {
+    position: absolute;
+    height: 47px;
+    width: 116%;
+    background: #E1383B;
+    border-radius: 50% 50% 50% 50% / 0 0 85% 85%;
+    left: -7%;
+    top: -4px;
+    z-index: -1;
+}
+.stan .buttons {
+    position: absolute;
+    top: 115px;
+    left: calc(50% - 8px);
+    height: 6px;
+    width: 6px;
+    background: #333333;
+    border-radius: 50%;
+    z-index: 12;
+}
+.stan .buttons::before {
+    top: -15px;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: inherit;
+}
+.stan .buttons::after {
+    top: 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: inherit;
+}
+.stan .legs{
+    position: absolute;
+    z-index: -2;
+    left: 17%;
+    height: 28px;
+    background: #5060AB;
+    width: 66%;
+    bottom: 16px;
+}
+.stan .legs .foot {
+    position: absolute;
+    z-index: 1;
+    height: 7px;
+    width: calc(50% + 10px);
+    background: #333333;
+    bottom: -3px;
+    border-radius: 50% 50% 0 0 / 95% 95% 0 0;
+}
+.stan .legs .foot.left {
+    transform:translateX(-8px);
+}
+.stan .legs .foot.right {
+    transform:translateX(55px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{border: 1px solid transparent !important;} */
+
+
+

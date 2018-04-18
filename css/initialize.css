@@ -1,0 +1,222 @@
+
+*,*::before,*::after{
+    transition: all 0.5s;margin:0px;
+    padding: 0;box-sizing: border-box;
+    
+}
+*::before,*::after{
+    content:"";
+    position:absolute;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 990px;
+    height: 315px;
+    position: fixed;
+    top: 429px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.stan{
+    width: 180px;
+    height: 180px;
+    margin-top: 135px;
+    position:fixed;
+    left:50%;
+    transform: translateX(-50%)
+}
+
+
+#code{
+    position: fixed;     
+
+    height: 100vh;
+    width:100vw; 
+    overflow: auto;
+}
+
+
+.stan .head{
+    width: 180px;
+    height: 180px;
+    position:fixed;
+    bottom: 90px;
+    border-radius: 50%;
+    display: flex;
+}
+.stan .head .lefteye{
+    bottom: 45px;
+    left: 40px;
+    width: 48px;
+    height:60px;
+    position:absolute;
+
+}
+.stan .head .righteye{
+    bottom: 45px;
+    right: 40px;
+    width: 48px;
+    height:60px;
+    position:absolute;
+
+}
+.stan .head .lefteye::before{
+    right: 10px;
+    top: 22px;
+    height: 6px;
+    width: 5px;
+
+}
+.stan .head .righteye::before{
+    left: 10px;
+    top: 22px;
+    height: 6px;
+    width: 5px;
+
+}
+.stan .head .mouth{
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: 25px;
+    height: 15px;
+    width: 30px;
+
+}
+.stan .head::before{
+    top: 0;
+
+    height: 150px;
+    width: 100%;
+
+}
+.stan .hat{
+
+    position: absolute;
+    bottom: -25px;
+    width: 180px;
+    height: 225px;
+
+}
+.stan .bobble {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    bottom: 247px;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.stan .bobble >span{
+    position:absolute;
+
+    height: 6px;
+    width: 42px;
+
+}
+
+.stan .body{
+    position: absolute;
+    width: 114px;
+    left:18%;
+    top:53px;
+}
+.stan .body .inner {
+    position: absolute;
+    width: 130px;
+    left: 50%;
+}
+.stan .body .inner::before {
+    left: 50%;
+    height: 90px;
+    width: 12px;
+}
+.stan .body .leftarm {
+    position: absolute;
+    width: 23px;
+    height: 60px;
+    top: 15px;
+    left: -10px;
+}
+.stan .body .leftarm:before {
+    height: 20px;
+    width: 10px;
+    right: -1px;
+    bottom: 10px;
+}
+.stan .body .leftarm .hand{
+    position: absolute;
+    height: 33px;
+    width: 27px;
+    left: -1px;
+    bottom: -12px;
+}
+.stan .body .rightarm {
+    position: absolute;
+    width: 23px;
+    height: 60px;
+    right: -12px;
+    top: 15px;
+
+}
+.stan .body .rightarm:before {
+    height: 19px;
+    width: 10px;
+    right: 21px;
+    bottom: 13px;
+}
+.stan .body .rightarm .hand {
+    position: absolute;
+    height: 33px;
+    width: 27px;
+    right: -1px;
+    bottom: -11px;
+}
+.stan .body .scarf {
+    position: absolute;
+    height: 47px;
+    width: 116%;
+    left: -7%;
+    top: -4px;
+}
+.stan .buttons {
+    position: absolute;
+    top: 115px;
+    left: calc(50% - 8px);
+    height: 6px;
+    width: 6px;
+}
+.stan .buttons::before {
+    top: -15px;
+    height: 100%;
+    width: 100%;
+}
+.stan .buttons::after {
+    top: 15px;
+    height: 100%;
+    width: 100%;
+}
+.stan .legs{
+    position: absolute;
+    left: 17%;
+    height: 28px;
+    width: 66%;
+    bottom: 16px;
+}
+.stan .legs .foot {
+    position: absolute;
+    height: 7px;
+    bottom: -3px;
+    width: calc(50% + 10px);
+}
+.stan .legs .foot.left {
+    transform:translateX(-8px);
+}
+.stan .legs .foot.right {
+    transform:translateX(55px);
+}
