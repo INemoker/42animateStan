@@ -45,7 +45,6 @@ body{
     height: 180px;
     position:fixed;
     bottom: 90px;
-    border-radius: 50%;
     display: flex;
 }
 .stan .head .lefteye{
